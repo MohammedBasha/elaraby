@@ -1,0 +1,82 @@
+/*====================================
+    Home Banner
+====================================*/
+
+.slider-container {
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+    }
+}
+
+/*====================================
+    Home Categories
+====================================*/
+
+.home-category {
+    > a {
+        font-family: "Helvetica Neue AR", "Helvetica Neue", "Open Sans Regular";
+        font-size: 24px;
+        font-weight: 600;
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        flex-basis: calc(20% - 20px);
+        width: calc(20% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-photo {
+        background: none !important;
+    }
+
+    .product-details {
+        a {
+            color: #000;
+            
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .price-box {
+            color: #0055b8;
+            font-weight: 600;
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        box-shadow: -2px 0 3px #ccc;
+        border-radius: 50%;
+        z-index: 9;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        top: calc(50% - 35px);
+
+        &:before {
+            color: #0055b8;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+}
